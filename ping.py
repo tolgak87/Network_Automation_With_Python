@@ -1,18 +1,21 @@
-import subprocess
+from re import findall
+from subprocess import Popen, PIPE
 
-def ping_test (hosts):                                          #Create ping_test function
-    reached = []                                                #Empty list to collect reachable hosts
-    not_reached = []                                            #Empty list to collect unreachable hosts
-    
-    for ip in hosts:
-        ping_test = subprocess.call('ping %s -n 2' % ip)        #Ping host n times
-        if ping_test == 0:                                      #If ping test is 0, it' reachable
-            reached.append(ip)
+def ping (host,ping_count):
+
+    for ip in host:
+        data = ""
+        output= Popen(f"ping {ip} -n {ping_count}", stdout=PIPE, encoding="utf-8")
+
+        for line in output.stdout:
+            data = data + line
+            ping_test = findall("TTL", data)
+
+        if ping_test:
+            print(f"{ip} : Successful Ping")
         else:
-            not_reached.append(ip)                              #Else, it's not reachable
-    print("{} is reachable".format(reached))
-    print("{} not reachable".format(not_reached))
+            print(f"{ip} : Failed Ping")
 
+nodes = ["8.8.8.8", "20.20.20.50", "facebook.com", "192.168.1.20"]
 
-hosts = ["192.168.1.1","123.214.2.2","www.google.com",]     #Hosts list
-ping_test (hosts)                                           #Call ping_test function
+ping(nodes,3)
