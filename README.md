@@ -15,7 +15,7 @@ Training: https://www.networksautomation.com/course-network-automation-with-pyth
 -RE  
 -Subprocess  
 -Matplotlib  
-
+<br />
 
 ## Content:
 Connection to the Network and System Devices  
