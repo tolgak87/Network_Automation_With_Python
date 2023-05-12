@@ -5,10 +5,10 @@ Book: https://a.co/d/0VBgkjQ
 Training: https://www.networksautomation.com/course-network-automation-with-python
 
 ## Python Modules:
--Paramiko
--Netmiko
--Concurrent
--Pandas
+-Paramiko__
+-Netmiko____
+-Concurrent__
+-Pandas__
 -Nornir
 -NAPALM
 -RE
