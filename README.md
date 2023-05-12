@@ -1,9 +1,10 @@
-# python-networking
+# Network Automation Scripts with Python
 Network Automation Scripts with Python.  
 
 Book: https://a.co/d/0VBgkjQ  
 Training: https://www.networksautomation.com/course-network-automation-with-python    
-
+  
+  
 ## Python Modules:
 -Paramiko  
 -Netmiko  
