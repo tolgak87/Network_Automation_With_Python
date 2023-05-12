@@ -6,9 +6,9 @@ Training: https://www.networksautomation.com/course-network-automation-with-pyth
 
 ## Python Modules:
 -Paramiko__
--Netmiko____
--Concurrent__
--Pandas__
+-Netmiko
+-Concurrent
+-Pandas
 -Nornir
 -NAPALM
 -RE
