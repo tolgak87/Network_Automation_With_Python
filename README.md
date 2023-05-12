@@ -1,4 +1,24 @@
 # python-networking
-Python for networking engineering
+Network Automation Scripts with Python.
 
-Here you can find many python scripts for network engineering. These are, multiple device ping, connect many devices and collect logs with both paramiko and netmiko modules, ftp connection and log manupulations. 
+Book: https://a.co/d/0VBgkjQ
+Training: https://www.networksautomation.com/course-network-automation-with-python
+
+## Python Modules:
+-Paramiko
+-Netmiko
+-Concurrent
+-Pandas
+-Nornir
+-NAPALM
+-RE
+-Subprocess
+-Matplotlib
+
+
+## Content:
+Connection to the Network and System Devices
+Check Device Logs
+File Transfers
+Manipulate Logs
+Configure Devices
